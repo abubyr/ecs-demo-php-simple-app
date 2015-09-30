@@ -25,9 +25,9 @@
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
                         fclose($myfile);
-			echo "You requested server:" . $ipsrv; 
-			echo "Server hostname:" . gethostbyaddr($ipsrv); 
-			echo "Your IP:" . $ip; 
+			echo "You requested server:" . $ipsrv . "\n"; 
+			echo "Server hostname:" . gethostbyaddr($ipsrv) . "\n"; 
+			echo "Your IP:" . $ip . "\n"; 
                 ?>
 
             </div>
