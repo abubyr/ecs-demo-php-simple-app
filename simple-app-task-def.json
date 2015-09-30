@@ -1,5 +1,5 @@
 {
-    "family": "console-sample-app",
+    "family": "simple-php-task",
     "volumes": [
         {
             "name": "my-vol",
@@ -9,10 +9,10 @@
     "containerDefinitions": [
         {
             "environment": [],
-            "name": "simple-app",
-            "image": "amazon/amazon-ecs-sample",
+            "name": "simple-php-app",
+            "image": "gnupg/amazon-ecs-sample",
             "cpu": 10,
-            "memory": 500,
+            "memory": 64,
             "portMappings": [
                 {
                     "containerPort": 80,
@@ -36,7 +36,7 @@
             "name": "busybox",
             "image": "busybox",
             "cpu": 10,
-            "memory": 500,
+            "memory": 32,
             "volumesFrom": [
             {
               "sourceContainer": "simple-app"
