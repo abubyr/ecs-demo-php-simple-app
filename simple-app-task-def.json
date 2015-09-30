@@ -10,7 +10,7 @@
         {
             "environment": [],
             "name": "simple-php-app",
-            "image": "gnupg/amazon-ecs-sample",
+            "image": "gnupg/amazon-ecs-sample:v_%BUILD_NUMBER%",
             "cpu": 10,
             "memory": 64,
             "portMappings": [
