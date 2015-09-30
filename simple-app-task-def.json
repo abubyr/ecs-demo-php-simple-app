@@ -39,7 +39,7 @@
             "memory": 32,
             "volumesFrom": [
             {
-              "sourceContainer": "simple-app"
+              "sourceContainer": "simple-php-app"
             }
             ],
             "entryPoint": [
